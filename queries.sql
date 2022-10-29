@@ -61,5 +61,5 @@ SELECT AVG(escape_attempts) FROM animals WHERE date_of_birth  BETWEEN '1990-01-0
     SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id JOIN species ON animals.species_id = species.id AND owners.full_name = 'Jennifer Orwell' AND species.name ='Digimon';
     -- List all animals owned by Dean Winchester that haven't tried to escape.
     SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id and owners.full_name ='Dean Winchester' and animals.escape_attempts = 0;
-    Who owns the most animals?
+    -- Who owns the most animals?
 SELECT owners.full_name, COUNT(animals) FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY owners.full_name ORDER BY COUNT(animals) DESC LIMIT 1;

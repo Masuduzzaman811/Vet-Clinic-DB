@@ -17,7 +17,7 @@ VALUES ('Agumon', '2020-02-03', 0, true, 10.23),
 INSERT INTO owners (full_name, age)
 VALUES ('Sam Smith', 34),
        ('Jennifer Orwell', 19),
-       (' Bob', 45)
+       (' Bob', 45),
        ('Melody Pond', 77),
        ('Dean Winchester', 14),
        ('Jodie Whittaker', 38);
